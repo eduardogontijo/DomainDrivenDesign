@@ -207,6 +207,23 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "prmToolkit.NotificationPattern/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/prmToolkit.NotificationPattern.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/prmToolkit.NotificationPattern.dll": {}
+        },
+        "resource": {
+          "lib/netstandard1.0/en-US/prmToolkit.NotificationPattern.resources.dll": {
+            "locale": "en-US"
+          }
+        }
       }
     }
   },
@@ -673,15 +690,28 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "prmToolkit.NotificationPattern/1.1.1": {
+      "sha512": "CThGuAFD3NxTXpoG1u4ECqGLr/FpZ1VMVq+QZryKN9xaKX7azgrs0KplCPbE3dcEG09icASdBjKB61CKrdVKiw==",
+      "type": "package",
+      "path": "prmtoolkit.notificationpattern/1.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard1.0/en-US/prmToolkit.NotificationPattern.resources.dll",
+        "lib/netstandard1.0/prmToolkit.NotificationPattern.dll",
+        "prmtoolkit.notificationpattern.1.1.1.nupkg.sha512",
+        "prmtoolkit.notificationpattern.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "prmToolkit.NotificationPattern >= 1.1.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eduardo.pereira\\.nuget\\packages\\": {},
+    "C:\\Users\\eduar\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -690,14 +720,14 @@
       "projectUniqueName": "C:\\Projetos\\YouLearn\\YouLearn.Domain\\YouLearn.Domain.csproj",
       "projectName": "YouLearn.Domain",
       "projectPath": "C:\\Projetos\\YouLearn\\YouLearn.Domain\\YouLearn.Domain.csproj",
-      "packagesPath": "C:\\Users\\eduardo.pereira\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
       "outputPath": "C:\\Projetos\\YouLearn\\YouLearn.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\eduardo.pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -726,6 +756,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "prmToolkit.NotificationPattern": {
+            "target": "Package",
+            "version": "[1.1.1, )"
           }
         },
         "imports": [
